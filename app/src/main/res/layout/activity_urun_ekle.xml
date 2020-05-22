@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    tools:context=".activity.UrunEkleActivity">
+
+    <EditText
+        android:id="@+id/txtUrunKategoriAdi"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Kategori Adı"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUrunAdi" />
+
+    <EditText
+        android:id="@+id/txtUrunAdi"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:layout_marginTop="141dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Ürün Adı"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarUrunGuncelle" />
+
+    <EditText
+        android:id="@+id/txtUrunSatisFiyati"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Satış Fiyatı"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:inputType="numberDecimal"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUrunKategoriAdi" />
+
+    <EditText
+        android:id="@+id/txtUrunStokDurumu"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Stok Durumu"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUrunSatisFiyati" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarUrunGuncelle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_esnaf_urunekle"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUrunSil"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="78dp"
+        android:background="@drawable/btn_esnaf_urunekle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUrunStokDurumu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

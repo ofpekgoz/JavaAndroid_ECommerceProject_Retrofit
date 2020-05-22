@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    tools:context=".activity.UrunSilActivity">
+
+    <TextView
+        android:id="@+id/txtUrunAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="2dp"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:text="Ürün Adı Seçiniz"
+        app:layout_constraintBottom_toTopOf="@+id/spinUrunAdiSec"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="2dp"
+        android:text="Kategori Seçiniz"
+        app:layout_constraintBottom_toTopOf="@+id/spinKategoriSec"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinUrunAdiSec"
+        android:layout_width="357dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="72dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinKategoriSec" />
+
+    <Spinner
+        android:id="@+id/spinKategoriSec"
+        android:layout_width="357dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="91dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarUrunSil" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarUrunSil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_esnaf_urunsil"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUrunSil"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/btn_esnaf_urunsil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinUrunAdiSec" />
+</androidx.constraintlayout.widget.ConstraintLayout>

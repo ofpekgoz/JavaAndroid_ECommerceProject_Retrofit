@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background6"
+    android:layout_height="match_parent"
+    tools:context=".activity.KayitOlActivity">
+
+    <Button
+        android:id="@+id/btnKayitOl"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/btn_kayit_ol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinHesapTuruKayit" />
+
+    <EditText
+        android:id="@+id/txtSifreKayit"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailKayit"
+        tools:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/txtEmailKayit"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/txtTelNoKayit"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_background"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:ems="10"
+        android:hint="Telefon Numarası"
+        android:inputType="numberSigned"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSifreKayit"
+        tools:inputType="numberPassword" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="412dp"
+        android:layout_height="63dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/kayit_ol_baslik" />
+
+    <Spinner
+        android:id="@+id/spinHesapTuruKayit"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:textColorHint="@color/colorText"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/colorText"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDogTarih" />
+
+    <Button
+        android:id="@+id/btnDogTarih"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edittext_background"
+        android:text="Doğum Tarihiniz"
+        android:textAllCaps="false"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTelNoKayit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

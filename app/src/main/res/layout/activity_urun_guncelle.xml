@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background6"
+    tools:context=".activity.UrunEkleActivity">
+
+    <Spinner
+        android:id="@+id/spinKategoriSec"
+        android:textColorHint="@color/colorText"
+        android:layout_width="357dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="124dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/colorText"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarUrunGuncelle" />
+
+    <Spinner
+        android:id="@+id/spinUrunAdiSec"
+        android:layout_width="357dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="23dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinKategoriSec" />
+
+    <EditText
+        android:id="@+id/txtUrunSatisFiyati"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Satış Fiyatı"
+        android:inputType="numberDecimal"
+        android:paddingLeft="15dp"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinUrunAdiSec" />
+
+    <EditText
+        android:id="@+id/txtUrunStokDurumu"
+        android:layout_width="357dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="23dp"
+        android:textColorHint="@color/colorText"
+        android:textColor="@color/colorText"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Stok Durumu"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUrunSatisFiyati" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarUrunGuncelle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_esnaf_urunguncelle"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorText"
+        android:layout_marginStart="31dp"
+        android:layout_marginBottom="2dp"
+        android:text="Kategori Seçiniz"
+        app:layout_constraintBottom_toTopOf="@+id/spinKategoriSec"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtUrunAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:textColor="@color/colorText"
+        android:layout_marginBottom="2dp"
+        android:text="Ürün Adı Seçiniz"
+        app:layout_constraintBottom_toTopOf="@+id/spinUrunAdiSec"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnUrunGuncelle"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_esnaf_urunguncelle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUrunStokDurumu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
